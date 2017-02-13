@@ -1,0 +1,53 @@
+{
+    "manifest_version": 2,
+    "name": "my extension",
+    "description": "This extension changes bootstrap style to Geocities style, so users will know how their websites look like 20 years ago",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_title": "bootstrapIsNewGeo",
+        "default_icon": "icon.png"
+    },
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["jquery.js"]
+    }],
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab"
+    ],
+
+    "web_accessible_resources": [
+        "images/image1.png",
+        "images/7upspot.gif",
+        "images/americanflag.gif",
+        "images/community.gif",
+        "images/computer-01.gif",
+        "images/computer.gif",
+        "images/construction.gif",
+        "images/counter2.gif",
+        "images/drudgesiren.gif",
+        "images/hacker.gif",
+        "images/heart.gif",
+        "images/hot.gif",
+        "images/mailkitten.gif",
+        "images/mchammer.gif",
+        "images/new.gif",
+        "images/new2.gif",
+        "images/noframes.gif",
+        "images/notepad.gif",
+        "images/spinningearth.gif",
+        "images/wabwalk.gif",
+        "images/webtrips.gif",
+        "images/yahooweek.gif",
+        "img/microfab.gif",
+        "img/glyphicons-halflings.png",
+        "geo.css"
+    ]
+
+}
